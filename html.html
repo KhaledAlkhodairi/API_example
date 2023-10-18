@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <div class="input-container">
+      <label for="latitude">Latitude:</label>
+      <input type="text" id="latitude" placeholder="Enter latitude">
+      <label for="longitude">Longitude:</label>
+      <input type="text" id="longitude" placeholder="Enter longitude">
+      <button id="getWeather">Get Weather (All Methods)</button>
+    </div>
+    <div class="weather-container">
+      <h2>Weather Data</h2>
+      <div id="weatherData"></div>
+    </div>
+    <div class="button-container">
+      <button id="getWeatherXMLHttpRequest">XMLHttpRequest</button>
+      <button id="getWeatherFetchPromises">Fetch with Promises</button>
+      <button id="getWeatherFetchAsyncAwait">Fetch with Async/Await</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
